@@ -59,7 +59,7 @@ If you'd like to get early feedback on your work, please use GitHub's **Draft Pu
 
 #### 4. Ensure All Checks Pass
 
-Before submitting your PR, ensure that all automated checks are passing by running `npm run preflight`. This command runs all tests, linting, and other style checks.
+Before submitting your PR, ensure that all automated checks are passing by running `npm run preflight`. This command runs all tests, linting, and other style checks. The CI workflow also performs a dependency audit on pull requests using `npm audit --production --audit-level=high` and lists outdated packages with `npm outdated`.
 
 #### 5. Update Documentation
 
